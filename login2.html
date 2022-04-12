@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>나래사진관</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Page loading styles-->
+        <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="css/simplebar.min.css"/>
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="css/theme.min.css">
+    <style>
+    .signin-form::before {
+    background-image: url(img/signin-illustration.png);
+        }
+
+      
+    </style>
+    <!-- Page loading scripts-->
+    <script>
+      (function () {
+        window.onload = function () {
+          var preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 2000);
+        };
+      })();
+      
+    </script>
+  
+   
+  </head>
+  <!-- Body-->
+  <body style="background-color:#f7f7fc;">
+ <div ><a href="main.html" >메인시안1</a></div>    
+    <main class="page-wrapper d-flex flex-column">
+  
+        
+      <!-- Page content-->
+      <section class="container d-flex justify-content-center align-items-center pt-7 pb-4" style="flex: 1 0 auto;">
+        <div class="signin-form mt-3">
+          <div class="signin-form-inner">
+            <!-- Sign in view-->
+            <div class="view show" id="signin-view">
+              <h1 class="h2 text-center">Login in</h1>
+              <p class="fs-ms text-muted mb-4 text-center">로그인하세요   </p>
+              <form class="needs-validation pt-5 pb-4 " novalidate>
+                  <div class="mb-3">
+                      <select class="form-select" id="select-input">
+                        <option selected disabled  value="">학교선택...</option>
+                        <option>Option item 1</option>
+                        <option>Option item 2</option>
+                        <option>Option item 3</option>
+                      </select>
+                    </div>
+                <div class="input-group mb-3"><i class="ai-mail position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+                  <input class="form-control rounded" type="email" placeholder="Email" required>
+                </div>
+                <div class="input-group mb-3"><i class="ai-lock position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+                  <div class="password-toggle w-100">
+                    <input class="form-control" type="password" placeholder="Password" required>
+                    <label class="password-toggle-btn" aria-label="Show/hide password">
+                      <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-3 pb-1">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="keep-signed-2">
+                    <label class="form-check-label" for="keep-signed-2">ID 기억하기</label>
+                  </div><a class="nav-link-style fs-ms" href="password-recovery.html">비밀번호 찾기</a>
+                </div>
+                <button class="btn btn-primary d-block w-100" type="submit">로그인</button>
+              
+              </form>
+            </div>
+            <!-- Sign up view-->
+            <div class="view" id="signup-view">
+              <h1 class="h2 text-center">Sign up</h1>
+              <p class="fs-ms text-muted mb-4 text-center">Registration takes less than a minute but gives you full control over your orders.</p>
+              <form class="needs-validation" novalidate>
+                <div class="mb-3">
+                  <input class="form-control" type="text" placeholder="Full name" required>
+                </div>
+                <div class="mb-3">
+                  <input class="form-control" type="text" placeholder="Email" required>
+                </div>
+                <div class="input-group mb-3">
+                  <div class="password-toggle w-100">
+                    <input class="form-control" type="password" placeholder="Password" required>
+                    <label class="password-toggle-btn" aria-label="Show/hide password">
+                      <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="input-group mb-3">
+                  <div class="password-toggle w-100">
+                    <input class="form-control" type="password" placeholder="Confirm password" required>
+                    <label class="password-toggle-btn" aria-label="Show/hide password">
+                      <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                    </label>
+                  </div>
+                </div>
+                <button class="btn btn-primary d-block w-100" type="submit">Sign up</button>
+                <p class="fs-sm pt-3 mb-0 text-center">Already have an account? <a href='#' class='fw-medium' data-view='#signin-view'>Sign in</a></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer-->
+    <footer class="footer py-4">
+      <div class="container d-md-flex align-items-center justify-content-between py-2 text-center text-md-end">
+        
+        <p class="fs-sm mb-0 me-3 order-md-1"><span class="text-muted me-1">© All rights reserved. Made by</span><a class="nav-link-style fw-normal" href="" target="_blank" rel="noopener">나래-Studio</a></p>
+      </div>
+    </footer>
+    <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll data-fixed-element><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span><i class="btn-scroll-top-icon ai-arrow-up">   </i></a>
+    <!-- Vendor scrits: js libraries and plugins-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <!-- Main theme script-->
+    <script src="js/theme.min.js"></script>
+  </body>
+</html>
