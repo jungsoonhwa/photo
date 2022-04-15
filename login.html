@@ -1,48 +1,82 @@
+
 <!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>홈페이지</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <link rel="stylesheet" type="text/css" href="css/reset.css">
-     <link rel="stylesheet" type="text/css" href="css/contents.css">
-    </head>
-    <body class="align">
-    <div class="grid">
-    <form action="/" method="post" class="form login">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>나래사진관</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <header class="login__header">
-        <h3 class="login__title">Login</h3>
-      </header>
-
-      <div class="login__body">
-        <div class="form__field">
-          <select>
-            <option>학교명</option>
-            </select>
+    <!-- Page loading styles-->
+        <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="css/simplebar.min.css"/>
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="css/theme.min.css">
+    <style>
+    .signin-form::before {
+    background-image: url(img/signin-illustration.png);
+        }   
+    </style>
+  </head>
+  <!-- Body-->
+  <body style="background-color:#f7f7fc;">   
+    <main class="page-wrapper d-flex flex-column">
+  
+        
+      <!-- Page content-->
+      <section class="container d-flex justify-content-center align-items-center pt-7 pb-4" style="flex: 1 0 auto;">
+        <div class="signin-form mt-3">
+          <div class="signin-form-inner">
+            <!-- Sign in view-->
+            <div class="view show" id="signin-view">
+              <h1 class="h2 text-center">Log in</h1>
+              <p class="fs-ms text-muted mb-4 text-center">로그인하세요   </p>
+              <form class="needs-validation pt-5 pb-4 " novalidate>
+                  <div class="mb-3">
+                      <select class="form-select" id="select-input">
+                        <option selected disabled  value="">학교를 선택해주세요</option>
+                        <option>Option item 1</option>
+                        <option>Option item 2</option>
+                        <option>Option item 3</option>
+                      </select>
+                    </div>
+                <div class="input-group mb-3"><i class="ai-pocket  position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+                  <input class="form-control rounded" type="text" placeholder="학번" required>
+                </div>
+                <div class="input-group mb-3"><i class="ai-lock position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+                  <div class="password-toggle w-100">
+                    <input class="form-control" type="password" placeholder="Password" required>
+                    <label class="password-toggle-btn" aria-label="Show/hide password">
+                      <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mb-3 pb-1">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="keep-signed-2">
+                    <label class="form-check-label" for="keep-signed-2">ID 기억하기</label>
+                  </div>
+                </div>
+                <button class="btn btn-primary d-block w-100" type="submit">로그인</button>
+              <p class="fs-sm pt-3 mb-0"><a href="main.html" class="fw-medium">메인이동</a></p>
+              </form>
+            </div>
+          </div>
         </div>
-
-        <div class="form__field">
-          <input type="email" placeholder="Email" required>
-        </div>
-
-        <div class="form__field">
-          <input type="password" placeholder="Password" required>
-        </div>
-
+      </section>
+    </main>
+    <!-- Footer-->
+    <footer class="footer py-4">
+      <div class="container d-md-flex align-items-center justify-content-between py-2 text-center text-md-end">
+        
+        <p class="fs-sm mb-0 me-3 order-md-1"><span class="text-muted me-1">© All rights reserved. Made by</span><a class="nav-link-style fw-normal" href="" target="_blank" rel="noopener">나래-Studio</a></p>
       </div>
+    </footer>
 
-      <footer class="login__footer">
-        <input type="submit" value="Login">
-
-        <p><span class="icon icon--info">?</span><a href="#">Forgot Password</a></p>
-      </footer>
-
-    </form>
-
-  </div>
-
-</body>
-
-
-    </html>
+    <script src="js/theme.min.js"></script>
+  </body>
+</html>
